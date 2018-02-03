@@ -30,9 +30,9 @@
 #rude-words {
     background: white;
     color: #333;
-    font-size: 20px;
+    font-size: 50px;
     line-height: 1.5em;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     min-height: 190px;
 }
@@ -116,10 +116,10 @@
                 case 'Positive':
                     document.getElementById('sentiment').innerHTML = '<i class="far fa-smile"></i>'
                     break
-                case 'Neutral':
+                case 'Negative':
                     document.getElementById('sentiment').innerHTML = '<i class="far fa-meh"></i>'
                     break
-                case 'Negative':
+                case 'Neutral':
                     document.getElementById('sentiment').innerHTML = '<i class="far fa-poo"></i>'
                     break
             }
