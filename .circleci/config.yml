@@ -7,7 +7,7 @@ jobs:
     working_directory: ~/wu2018
     steps:
       - checkout
-      - run: php --ini
+      - run: phpunit
 
 
 # # PHP CircleCI 2.0 configuration file
@@ -20,7 +20,7 @@ jobs:
 #     docker:
 #       # specify the version you desire here
 #       - image: circleci/php:7.1.5-browsers
-      
+
 #       # Specify service dependencies here if necessary
 #       # CircleCI maintains a library of pre-built images
 #       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -44,6 +44,6 @@ jobs:
 #           paths:
 #             - ./vendor
 #           key: v1-dependencies-{{ checksum "composer.json" }}
-        
+
 #       # run tests!
 #       - run: phpunit
