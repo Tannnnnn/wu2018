@@ -51,15 +51,14 @@ class AI
      */
     public static function getRudeWords($text)
     {
-        // $result = [];
-        // $check = ("แทน","ควาย","กาก","เหี้ย","กระจอก");
-        // for ($i=0; $i < sizeof($check) ; $i++) {
-        //   if (strpos($text,$check[$i])) {
-        //       array_push($result,$check[$i]);
-        //       return $result;
-        //   }
-        // }
-        return ['Neutral'];
+      $result = [];
+      $rude = ["สัส","เอ้ย","ควย","เหี้ย","kuy"];
+      for($i = 0 ; $i < sizeof($rude) ; $i++)
+      {
+          if(strpos($text, $rude[$i]) !== false )
+              array_push($result,$rude[$i]);
+      }
+      return $result;
 
     }
 
