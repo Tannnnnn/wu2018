@@ -37,19 +37,19 @@
     {
       $result = AI::getRudeWords('แสสสสส');
       $expected_result = ['แสสสสส' ] ;
-      $this->assertContain($expected_result , $result);
+      $this->assertContains($expected_result , $result);
   }
    public function testRudeWords_hei() : void
     {
       $result = AI::getRudeWords('คนเหี้ย');
       $expected_result = ['คนเหี้ย'] ;
-      $this->assertContain($expected_result , $result);
+      $this->assertContains($expected_result , $result);
     }
     public function testRudeWords_kuy() : void
     {
       $result = AI::getRudeWords('ไอแทนหัวควย');
       $expected_result = ['ไอแทนหัวควย']  ;
-      $this->assertContain($expected_result , $result);
+      $this->assertContains($expected_result , $result);
     }
    public function testLanguages_s() : void
      {
