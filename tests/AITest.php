@@ -37,7 +37,7 @@
     {
       $result = AI::getRudeWords('สัส');
       $expected_result = ['สัส']  ;
-      $this->assertEquals($expected_result , $result);
+      $this->assertContains($expected_result , $result);
   }
    public function testRudeWords_hei() : void
     {
