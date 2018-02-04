@@ -33,34 +33,34 @@
       $expected_result = 'Neutral' ;
       $this->assertEquals($expected_result , $result);
     }
-    /*public function testRudeWords_sud() : void
+    public function testRudeWords_sud() : void
     {
       $result = AI::getRudeWords('แสสสสส');
-      $expected_result = 'แสสสสส' ;
+      $expected_result = ['แสสสสส' ] ;
       $this->assertEquals($expected_result , $result);
   }
    public function testRudeWords_hei() : void
     {
       $result = AI::getRudeWords('คนเหี้ย');
-      $expected_result = 'คนเหี้ย' ;
+      $expected_result = ['คนเหี้ย'] ;
       $this->assertEquals($expected_result , $result);
     }
     public function testRudeWords_kuy() : void
     {
       $result = AI::getRudeWords('ไอแทนหัวควย');
-      $expected_result = 'ไอแทนหัวควย'  ;
+      $expected_result = ['ไอแทนหัวควย']  ;
       $this->assertEquals($expected_result , $result);
-    }*/
+    }
    public function testLanguages_s() : void
      {
      $result = AI::getLanguages('สวัสดี');
-     $expected_result = 'TH' ;
+     $expected_result = ['TH'] ;
       $this->assertEquals($expected_result , $result);
     }
      public function testLanguages() : void
    {
        $result = AI::getLanguages('Hello');
-       $expected_result = 'EN' ;
+       $expected_result = ['EN' ];
        $this->assertEquals($expected_result , $result);
      }
 
