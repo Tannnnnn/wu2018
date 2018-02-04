@@ -36,20 +36,20 @@
     public function testRudeWords_sud() : void
     {
       $result = AI::getRudeWords('สัส');
-      $expected_result = ['สัส']  ;
-      $this->assertEquals($expected_result , $result);
+      $expected_result = 'สัส'  ;
+      $this->assertContains($expected_result , $result);
   }
    public function testRudeWords_hei() : void
     {
       $result = AI::getRudeWords('เหี้ย');
       $expected_result = ['เหี้ย'] ;
-      $this->assertEquals($expected_result , $result);
+      $this->assertContains($expected_result , $result);
     }
     public function testRudeWords_kuy() : void
     {
       $result = AI::getRudeWords('ควย');
       $expected_result = ['ควย']  ;
-      $this->assertEquals($expected_result , $result);
+      $this->assertContains($expected_result , $result);
     }
    public function testLanguages_s() : void
      {
