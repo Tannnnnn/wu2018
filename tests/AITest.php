@@ -51,7 +51,7 @@
       $expected_result = 'ไอแทนหัวควย'  ;
       $this->assertEquals($expected_result , $result);
     }*/
-   public function testLanguages() : void
+   public function testLanguages_s() : void
      {
      $result = AI::getLanguages('สวัสดี');
      $expected_result = 'TH' ;
@@ -63,11 +63,6 @@
        $expected_result = 'EN' ;
        $this->assertEquals($expected_result , $result);
      }
-     /*public function testGender_Male() : void
-     {
-       $result = AI::getGender('สวัสดีครับ');
-       $expected_result = 'Male' ;
-       $this->assertEquals($expected_result , $result);
-     }*/
+
   }
  ?>
