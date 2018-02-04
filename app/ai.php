@@ -51,14 +51,14 @@ class AI
      */
     public static function getRudeWords($text)
     {
-      $result = [];
+      $results = [];
       $rude = ["สัส","เอ้ย","ควย","เหี้ย","kuy"];
       for($i = 0 ; $i < sizeof($rude) ; $i++)
       {
           if(strpos($text, $rude[$i]) !== false )
-              array_push($result,$rude[$i]);
+              array_push($results,$rude[$i]);
       }
-      return $result;
+      return $results;
 
     }
 
