@@ -36,19 +36,19 @@
     public function testRudeWords_sud() : void
     {
       $result = AI::getRudeWords('แสสสสส');
-      $expected_result = $results ;
+      $expected_result = 'แสสสสส' ;
       $this->assertEquals($expected_result , $result);
     }
     public function testRudeWords_hei() : void
     {
       $result = AI::getRudeWords('คนเหี้ย');
-      $expected_result = $results ;
+      $expected_result = 'คนเหี้ย' ;
       $this->assertEquals($expected_result , $result);
     }
     public function testRudeWords_kuy() : void
     {
       $result = AI::getRudeWords('ไอแทนหัวควย');
-      $expected_result = $results  ;
+      $expected_result = 'ไอแทนหัวควย'  ;
       $this->assertEquals($expected_result , $result);
     }
     // public function testGender_Male() : void
