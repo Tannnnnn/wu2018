@@ -15,7 +15,7 @@ jobs:
       enabled: true
     working_directory: ~/wu2018
     steps:
-      - run: ssh ubuntu@172.31.42.78 "sh deploy.sh"
+      - run: ssh ubuntu@ec2-52-221-212-215.ap-southeast-1.com "sh deploy.sh"
 workflows:
   version: 2
   build-deploy:
