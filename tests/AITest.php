@@ -33,13 +33,13 @@
       $expected_result = 'Neutral' ;
       $this->assertEquals($expected_result , $result);
     }
-    public function testRudeWords_sud() : void
+    /*public function testRudeWords_sud() : void
     {
       $result = AI::getRudeWords('แสสสสส');
       $expected_result = 'แสสสสส' ;
       $this->assertEquals($expected_result , $result);
-    }
-    public function testRudeWords_hei() : void
+  }
+   public function testRudeWords_hei() : void
     {
       $result = AI::getRudeWords('คนเหี้ย');
       $expected_result = 'คนเหี้ย' ;
@@ -50,24 +50,24 @@
       $result = AI::getRudeWords('ไอแทนหัวควย');
       $expected_result = 'ไอแทนหัวควย'  ;
       $this->assertEquals($expected_result , $result);
+    }*/
+   public function testLanguages() : void
+     {
+     $result = AI::getLanguages('สวัสดี');
+     $expected_result = 'TH' ;
+      $this->assertEquals($expected_result , $result);
     }
-    // public function testGender_Male() : void
-    // {
-    //   $result = AI::getGender('สวัสดีครับ');
-    //   $expected_result = 'Male' ;
-    //   $this->assertEquals($expected_result , $result);
-    // }
-    // public function testGender_Male() : void
-    // {
-    //   $result = AI::getGender('สวัสดีครับ');
-    //   $expected_result = 'Male' ;
-    //   $this->assertEquals($expected_result , $result);
-    // }
-    // public function testGender_Male() : void
-    // {
-    //   $result = AI::getGender('สวัสดีครับ');
-    //   $expected_result = 'Male' ;
-    //   $this->assertEquals($expected_result , $result);
-    // }
+     public function testLanguages() : void
+   {
+       $result = AI::getLanguages('Hello');
+       $expected_result = 'EN' ;
+       $this->assertEquals($expected_result , $result);
+     }
+     /*public function testGender_Male() : void
+     {
+       $result = AI::getGender('สวัสดีครับ');
+       $expected_result = 'Male' ;
+       $this->assertEquals($expected_result , $result);
+     }*/
   }
  ?>
