@@ -35,20 +35,20 @@
     }
     public function testRudeWords_sud() : void
     {
-      $result = AI::getRudeWords('แสสสสส');
-      $expected_result = $rude ;
+      $result = AI::getRudeWords('สัส');
+      $expected_result = ['สัส' ] ;
       $this->assertContains($expected_result , $result);
   }
    public function testRudeWords_hei() : void
     {
       $result = AI::getRudeWords('คนเหี้ย');
-      $expected_result = $rude ;
+      $expected_result = ['คนเหี้ย'] ;
       $this->assertContains($expected_result , $result);
     }
     public function testRudeWords_kuy() : void
     {
       $result = AI::getRudeWords('ไอแทนหัวควย');
-      $expected_result = $rude  ;
+      $expected_result = ['ไอแทนหัวควย']  ;
       $this->assertContains($expected_result , $result);
     }
    public function testLanguages_s() : void
